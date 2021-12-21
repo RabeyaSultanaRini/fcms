@@ -2,8 +2,10 @@
 use App\Http\Controllers\AdminLoginController;
 use  App\Http\Controllers\Backend\DashboardController;
 use  App\Http\Controllers\Backend\TrainerController;
-
+use  App\Http\Controllers\Backend\ShiftController;
+use App\Http\Controllers\Backend\PackageController;
 use App\Http\Controllers\Backend\MemberController;
+use App\Http\Controllers\Backend\AttendanceController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,17 +21,34 @@ use Illuminate\Support\Facades\Route;
 Route::get('/',function(){
     return view('website.master');
 });
+Route::group(['prefix'=>'admin'],function (){
+//Route::get('/login',[ AdminLoginController::class,'Login'])->name('login');
 
-Route::get('/login',[ AdminLoginController::class,'Login'])->name('login');
+Route::get('/',[DashboardController::class,'index'])->name('dashboard');
 
-Route::get('/d',[DashboardController::class,'index'])->name('dashboard');
-Route::get('/admin/addtrainer',[TrainerController::class,'Addtrainer'])->name('admin.addtrainer');
-Route::post('/admin/trainerStore',[TrainerController::class,'TrainerStore'])->name('admin.train.store');
-Route::get('/admin/trainerlist',[TrainerController::class,'Trainerlist'])->name('admin.trainer.list');
+//Trainer
+Route::get('/addtrainer',[TrainerController::class,'Addtrainer'])->name('admin.addtrainer');
+Route::post('/trainerStore',[TrainerController::class,'TrainerStore'])->name('admin.train.store');
+Route::get('/trainerlist',[TrainerController::class,'Trainerlist'])->name('admin.trainer.list');
 
 
 
 //Member
-Route::get('/admin/addmember',[MemberController::class,'Addmember'])->name('admin.addmember');
-Route::post('/admin/memberStore',[MemberController::class,'MemberStore'])->name('admin.member.store');
-Route::get('/admin/memberlist',[MemberController::class,'Memberlist'])->name('admin.member.list');
+Route::get('/addmember',[MemberController::class,'Addmember'])->name('admin.addmember');
+Route::post('/memberStore',[MemberController::class,'MemberStore'])->name('admin.member.store');
+Route::get('/memberlist',[MemberController::class,'Memberlist'])->name('admin.member.list');
+//shift
+Route::get('/shift',[ShiftController::class,'ShiftAdd'])->name('admin.shift');
+Route::post('/shiftStore',[ShiftController::class,'ShiftStore'])->name('admin.shift.store');
+Route::get('/ShiftList',[ShiftController::class,'ShiftList'])->name('admin.Shift.list');
+
+//package
+Route::get('/addpackage',[PackageController::class,'PackageAdd'])->name('admin.addpackage');
+Route::post('/PackageStore',[PackageController::class,'PackageStore'])->name('admin.Package.Store');
+Route::get('/PackageList',[PackageController::class,'PackageList'])->name('admin.Package.List');
+
+//Attendance
+ Route::get('/addattendance',[AttendanceController::class,'AttendanceAdd'])->name('admin.addattendance');
+ Route::post('/AttendanceStore',[AttendanceController::class,'AttendanceStore'])->name('admin.Attendance.Store');
+ Route::get('/AttendanceList',[AttendanceController::class,'AttendanceList'])->name('admin.Attendance.List');
+});

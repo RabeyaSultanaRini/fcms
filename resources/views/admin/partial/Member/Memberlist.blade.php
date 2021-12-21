@@ -16,9 +16,9 @@
     </tr>
   </thead>
     <tbody>
-       @foreach($Addmembers as $member)
+       @foreach($members as $key=> $member)
     <tr>
-      <th >{{$member->id}}</th>
+      <th >{{$key+1}}</th>
       <td>{{$member->name}}</td>
       <td>{{$member->Email}}</td>
       <td>{{$member->Address}}</td>

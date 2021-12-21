@@ -35,7 +35,7 @@
    <body class="main-layout">
       <!-- loader  -->
       <div class="loader_bg">
-         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+         <div class="loader"><img src="{{url('frontend/images/loading.gif')}}" alt="#" /></div>
       </div>
       <!-- end loader -->
       <!-- header -->
@@ -48,7 +48,7 @@
                      <div class="full">
                         <div class="center-desk">
                            <div class="logo">
-                              <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+                              <a href="index.html"><img src="{{url('frontend/images/logo.png')}}" alt="#" /></a>
                            </div>
                         </div>
                      </div>
@@ -96,7 +96,7 @@
                </div>
                <div class="col-md-6">
                   <div class="text-img">
-                     <figure><img src="images/toy_img.png" alt="#"/></figure>
+                     <figure><img src="{{url('frontend/images/toy_img.png')}}" alt="#"/></figure>
                   </div>
                </div>
             </div>
@@ -117,19 +117,19 @@
             <div class="row">
                <div class="col-md-4">
                   <div class="Our_box">
-                     <i><img src="icon/icon1.png" alt="#"/></i>
+                     <i><img src="{{url('frontend/icon/icon1.png')}}" alt="#"/></i>
                      <h4>HEAVY WEIGHT <br>CLASSES</h4>
                   </div>
                </div>
                <div class="col-md-4">
                   <div class="Our_box">
-                     <i><img src="icon/icon2.png" alt="#"/></i>
+                     <i><img src="{{url('frontend/icon/icon2.png')}}" alt="#"/></i>
                      <h4>BODY BUILDING <br>CLASSES</h4>
                   </div>
                </div>
                <div class="col-md-4">
                   <div class="Our_box">
-                     <i><img src="icon/icon3.png" alt="#"/></i>
+                     <i><img src="{{url('frontend/icon/icon3.png')}}" alt="#"/></i>
                      <h4>WEIGHT LOSS <br>CLASSES</h4>
                   </div>
                </div>
@@ -190,7 +190,7 @@
                </div>
                <div class="col-md-8">
                   <div class="back_img">
-                     <figure><img src="images/img.jpg" alt="#"/></figure>
+                     <figure><img src="{{url('frontend/images/img.jpg')}}" alt="#"/></figure>
                   </div>
                </div>
             </div>
@@ -198,111 +198,9 @@
       </div>
       <!-- end request -->
       <!-- people -->
-      <div class="people">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="titlepage">
-                     <h2> What People Says</h2>
-                     <span>looking at its layout. The point of using Lorem Ipsumreadable content of a page when looking at its layout.</span>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-md-12">
-                  <div id="myCarousel" class="carousel slide people_Carousel " data-ride="carousel">
-                     <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                     </ol>
-                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                           <div class="container">
-                              <div class="carousel-caption ">
-                                 <div class="row">
-                                    <div class="col-md-8 offset-md-2">
-                                       <div class="test_box">
-                                          <h4>Duis aute</h4>
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. x ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="carousel-item">
-                           <div class="container">
-                              <div class="carousel-caption">
-                                 <div class="row">
-                                    <div class="col-md-8 offset-md-2">
-                                       <div class="test_box">
-                                          <h4>Duis aute</h4>
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. x ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="carousel-item">
-                           <div class="container">
-                              <div class="carousel-caption">
-                                 <div class="row">
-                                    <div class="col-md-8 offset-md-2">
-                                       <div class="test_box">
-                                          <h4>Duis aute</h4>
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. x ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                     <span class="sr-only">Previous</span>
-                     </a>
-                     <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                     <span class="sr-only">Next</span>
-                     </a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
+      
       <!-- end people -->
-      <!--  footer -->
-      <footer>
-         <div class="footer">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-8 offset-md-2">
-                     <div class="cont">
-                        <h3> <span class="multi">Free Multipurpose </span> <br> Responsive Do It Today</h3>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is </p>
-                     </div>
-                     <form class="bottom_form">
-                        <input class="enter" placeholder="Enter your email" type="text" name="Enter your email">
-                        <button class="sub_btn">subscribe</button>
-                     </form>
-                  </div>
-               </div>
-            </div>
-            <div class="copyright">
-               <div class="container">
-                  <div class="row">
-                     <div class="col-md-12">
-                        
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </footer>
-      <!-- end footer -->
+      
       <!-- Javascript files-->
       <script src="{{url('frontend/js/jquery.min.js')}}"></script>
       <script src="{{url('frontend/js/popper.min.js')}}"></script>

@@ -11,14 +11,14 @@
   <div class="form-row">
     <div class="col-md-4 mb-3">
       <label for="validationCustom01">Member Name</label>
-      <input type="text" class="form-control" id="validationCustom01" placeholder="Member Name" value="Mark" required>
+      <input name="member_Name" class="form-control" id="validationCustom01" placeholder="Member Name"  required>
       <div class="valid-feedback">
         Looks good!
       </div>
     </div>
     <div class="col-md-4 mb-3">
       <label for="validationCustom02">Email</label>
-      <input type="text" class="form-control" id="validationCustom02" placeholder="Email" value="Otto" required>
+      <input name="Email" class="form-control" id="validationCustom02" placeholder="Email"  required>
       <div class="valid-feedback">
         Looks good!
       </div>
@@ -29,7 +29,7 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="inputGroupPrepend">@</span>
         </div>
-        <input type="text" class="form-control" id="validationCustomUsername" placeholder="Address" aria-describedby="inputGroupPrepend" required>
+        <input name="Address" class="form-control" id="validationCustomUsername" placeholder="Address" aria-describedby="inputGroupPrepend" required>
         <div class="invalid-feedback">
           Please choose a username.
         </div>
@@ -39,21 +39,21 @@
   <div class="form-row">
     <div class="col-md-6 mb-3">
       <label for="validationCustom03">Contact Number</label>
-      <input type="text" class="form-control" id="validationCustom03" placeholder="Contact Number" required>
+      <input name="Contact_Number" class="form-control" id="validationCustom03" placeholder="Contact Number" required>
       <div class="invalid-feedback">
         Please provide a valid city.
       </div>
     </div>
     <div class="col-md-3 mb-3">
       <label for="validationCustom04">Membership Number</label>
-      <input type="text" class="form-control" id="validationCustom04" placeholder="Membership Number" required>
+      <input name="Membership_Number" class="form-control" id="validationCustom04" placeholder="Membership Number" required>
       <div class="invalid-feedback">
         Please provide a valid state.
       </div>
     </div>
     <div class="col-md-3 mb-3">
       <label for="validationCustom05">Age</label>
-      <input type="text" class="form-control" id="validationCustom05" placeholder="Age" required>
+      <input name="Age" class="form-control" id="validationCustom05" placeholder="Age" required>
       <div class="invalid-feedback">
         Please provide a valid zip.
       </div>

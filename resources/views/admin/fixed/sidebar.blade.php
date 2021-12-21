@@ -30,7 +30,7 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-          <li class="nav-item menu-open">
+          <!-- <li class="nav-item menu-open">
             <a href="{{route('dashboard')}}" class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
@@ -39,9 +39,9 @@
               </p>
             </a>
           
-          </li>
+          </li> -->
          
-          <li class="nav-item">
+          <!-- <li class="nav-item">
            
             <ul class="nav nav-treeview">
               <li class="nav-item">
@@ -94,12 +94,12 @@
                 </a>
               </li>
             </ul>
-          </li>
+          </li> -->
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-tree"></i>
+            <a href="{{route('dashboard')}}" class="nav-link">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
-                Trainer
+                Admin
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
@@ -115,17 +115,68 @@
                   <i class="far fa-circle nav-icon"></i>
                   <p>Trainer List</p>
                 </a>
-              </li>
+              </li >
               <li class="nav-item">
-                <a href="pages/UI/buttons.html" class="nav-link">
+                <a href="{{route('admin.shift')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Buttons</p>
+                  <p>Shift</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/UI/sliders.html" class="nav-link">
+                <a href="{{route('admin.Shift.list')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Sliders</p>
+                  <p>Shift List</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{route('admin.addpackage')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Package</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{route('admin.Package.List')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Package List</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/UI/timeline.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Timeline</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/UI/ribbons.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Ribbons</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-tree"></i>
+              <p>
+                Trainer
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              
+                
+              
+              <li class="nav-item">
+                <a href="{{route('admin.addattendance')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Attendance</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{route('admin.Attendance.List')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Attendance List</p>
                 </a>
               </li>
               <li class="nav-item">

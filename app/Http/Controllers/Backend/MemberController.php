@@ -4,15 +4,15 @@ namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\member;
+use App\Models\Member;
 class MemberController extends Controller
 {
     public function Addmember(){
-        return view('admin.partial.Trainer.AddMember');
+        return view('admin.partial.Member.AddMember');
 
     }
     public function MemberStore(Request $request){
-        Addmember::create([
+        Member::create([
 //database name:::form name
 'name'=>$request->member_Name,
 'Email'=>$request->Email,
@@ -26,7 +26,7 @@ class MemberController extends Controller
         return redirect()->back();
     }
     public function Memberlist(){
-        //$Addmembers=Addmember::all();
-        return view('admin.partial.Trainer.memberlist');//compact('AddMemberss'));
+        $members=Member::all();
+        return view('admin.partial.Member.memberlist',compact('members'));
     }
 }
