@@ -48,7 +48,7 @@
                      <div class="full">
                         <div class="center-desk">
                            <div class="logo">
-                              <a href="index.html"><img src="{{url('frontend/images/logo.png')}}" alt="#" /></a>
+                             
                            </div>
                         </div>
                      </div>
@@ -70,7 +70,7 @@
                                  <a class="nav-link" href="#">Register</a>
                               </li>
                            </ul>
-                           <div class="sign_btn"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+                           
                         </div>
                      </nav>
                   </div>
@@ -87,16 +87,16 @@
                <div class="col-md-6">
                   <div class="text-bg">
                      <div class="padding_lert">
-                        <h1>GYM AND FITNESS</h1>
-                        <span>Do It Today</span>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it</p>
-                        <a class="read_more" href="#">Read More</a>
+                        <h1> FITNESS CLUB MANAGEMENT</h1>
+                        <span>Workout Today,Be Proud Tomorrow</span>
+                        
+                        
                      </div>
                   </div>
                </div>
                <div class="col-md-6">
                   <div class="text-img">
-                     <figure><img src="{{url('frontend/images/toy_img.png')}}" alt="#"/></figure>
+                     <figure><img src="{{url('frontend/images/woman-exercise.jpg')}}" alt="#"/></figure>
                   </div>
                </div>
             </div>
@@ -109,8 +109,8 @@
             <div class="row">
                <div class="col-md-12">
                   <div class="titlepage">
-                     <h2>Our Features Classes</h2>
-                     <span>CHECKOUT OUR FITNESS CLASSES</span>
+                     <h2>Our Services</h2>
+            
                   </div>
                </div>
             </div>
@@ -118,23 +118,23 @@
                <div class="col-md-4">
                   <div class="Our_box">
                      <i><img src="{{url('frontend/icon/icon1.png')}}" alt="#"/></i>
-                     <h4>HEAVY WEIGHT <br>CLASSES</h4>
+                     <h4>Trainer Shift </h4>
                   </div>
                </div>
                <div class="col-md-4">
                   <div class="Our_box">
                      <i><img src="{{url('frontend/icon/icon2.png')}}" alt="#"/></i>
-                     <h4>BODY BUILDING <br>CLASSES</h4>
+                     <h4>Packages  </h4>
                   </div>
                </div>
                <div class="col-md-4">
                   <div class="Our_box">
                      <i><img src="{{url('frontend/icon/icon3.png')}}" alt="#"/></i>
-                     <h4>WEIGHT LOSS <br>CLASSES</h4>
+                     <h4>Diet</h4>
                   </div>
                </div>
                <div class="col-md-12">
-                  <a class="read_more" href="#">Read More</a>
+                
                </div>
             </div>
          </div>
@@ -146,9 +146,9 @@
             <div class="row">
                <div class="col-md-12">
                   <div class="titlepage">
-                     <h2>FITNESS CLASSES THIS SUMMER. PAY NOW AND GET 25% DISCOUNT</h2>
-                     <span>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor a</span>
-                     <a class="read_more">Read More</a>
+                     <h2>FITNESS CLASSES THIS WINTER. PAY NOW AND GET 25% DISCOUNT</h2>
+                     
+                     
                   </div>
                </div>
             </div>
@@ -162,7 +162,7 @@
                <div class="col-md-12">
                   <div class="titlepage">
                      <h2>Rqueste a call back</h2>
-                     <span>There are many variations of passages of Lorem Ipsum available, but the majority have suffered a</span>
+                    
                   </div>
                </div>
             </div>
@@ -188,9 +188,9 @@
                      </div>
                   </form>
                </div>
-               <div class="col-md-8">
+               <div class="col-md-6">
                   <div class="back_img">
-                     <figure><img src="{{url('frontend/images/img.jpg')}}" alt="#"/></figure>
+                     <figure><img src="{{url('frontend/images/equipment.jpg')}}" alt="#"/></figure>
                   </div>
                </div>
             </div>

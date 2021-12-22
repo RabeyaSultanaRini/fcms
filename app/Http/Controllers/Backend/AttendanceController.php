@@ -13,7 +13,7 @@ class AttendanceController extends Controller
     }
     public function AttendanceStore(Request $request){
       Attendance::create([
-            'member_name'=>$request->member_Name,
+            'member_name'=>$request->member_name,
             'membership_number'=>$request->membership_number,
             'attendance_status'=>$request->attendance_status,
             'date_details'=>$request->date_details,
@@ -24,6 +24,7 @@ class AttendanceController extends Controller
     }
     public function AttendanceList(){
        $Attendances=Attendance::all();
+       //dd($Attendances);
         return view('admin.partial.Attendance.AttendanceList',compact('Attendances'));
     }
 }

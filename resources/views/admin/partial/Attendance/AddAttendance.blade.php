@@ -11,7 +11,7 @@
   <div class="form-row">
     <div class="col-md-4 mb-3">
       <label for="validationCustom01">Member Name</label>
-      <input name="member_Name" class="form-control" id="member_Name" placeholder="Member Name"  required>
+      <input name="member_name" class="form-control" id="member_name" placeholder="Member Name"  required>
       <div class="valid-feedback">
         Looks good!
       </div>

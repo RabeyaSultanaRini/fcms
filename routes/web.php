@@ -6,6 +6,8 @@ use  App\Http\Controllers\Backend\ShiftController;
 use App\Http\Controllers\Backend\PackageController;
 use App\Http\Controllers\Backend\MemberController;
 use App\Http\Controllers\Backend\AttendanceController;
+use App\Http\Controllers\Backend\DietController;
+use App\Http\Controllers\Backend\EquipmentController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -51,4 +53,15 @@ Route::get('/PackageList',[PackageController::class,'PackageList'])->name('admin
  Route::get('/addattendance',[AttendanceController::class,'AttendanceAdd'])->name('admin.addattendance');
  Route::post('/AttendanceStore',[AttendanceController::class,'AttendanceStore'])->name('admin.Attendance.Store');
  Route::get('/AttendanceList',[AttendanceController::class,'AttendanceList'])->name('admin.Attendance.List');
+
+ //Diet Plan 
+ Route::get('/adddiet',[DietController::class,'AddDiet'])->name('admin.adddiet');
+ Route::post('/DietStore',[DietController::class,'DietStore'])->name('admin.Diet.Store');
+ Route::get('/DietList',[DietController::class,'DietList'])->name('admin.Diet.List');
+ //Equipment
+ Route::get('/addequipment',[EquipmentController::class,'AddEquipment'])->name('admin.addequipment');
+ Route::post('/EquipmentStore',[EquipmentController::class,'EquipmentStore'])->name('admin.Equipment.Store');
+ Route::get('/EquipmentList',[EquipmentController::class,'EquipmentList'])->name('admin.Equipment.List');
+
+ //payment
 });

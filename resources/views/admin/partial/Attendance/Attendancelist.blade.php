@@ -18,10 +18,10 @@
        @foreach($Attendances as $key=> $attendance)
     <tr>
       <th >{{$key+1}}</th>
-      <td>{{$attendance->name}}</td>
-      <td>{{$attendance->Membership_Number}}</td>
+      <td>{{$attendance->member_name}}</td>
+      <td>{{$attendance->membership_number}}</td>
       <td>{{$attendance->attendance_status}}</td>
-      <td>{{$attendance->Date}}</td>
+      <td>{{$attendance->date_details}}</td>
       
     </tr>
     @endforeach

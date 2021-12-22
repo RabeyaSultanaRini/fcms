@@ -141,20 +141,44 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/UI/timeline.html" class="nav-link">
+                <a href="{{route('admin.adddiet')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Timeline</p>
+                  <p>Basic Diet</p>
+        
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/UI/ribbons.html" class="nav-link">
+                <a href="{{route('admin.Diet.List')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Ribbons</p>
+                  <p>Diet List</p>
                 </a>
               </li>
-            </ul>
-          </li>
-
+              <li class="nav-item">
+                <a href="{{route('admin.addequipment')}}"  class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Equipments</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{route('admin.Equipment.List')}}"  class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Equipment List</p>
+                </a>
+              </li>
+          
+          <li class="nav-item">
+                <a href="pages/forms/validation.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Payment</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/forms/validation.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Payment List</p>
+                </a>
+              </li>
+              </ul>
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-tree"></i>
@@ -180,15 +204,15 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/UI/modals.html" class="nav-link">
+                <a href="{{route('admin.addequipment')}}"  class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Modals & Alerts</p>
+                  <p>Equipments</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/UI/navbar.html" class="nav-link">
+                <a href="{{route('admin.Equipment.List')}}"  class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Navbar & Tabs</p>
+                  <p>Equipment List</p>
                 </a>
               </li>
               <li class="nav-item">
