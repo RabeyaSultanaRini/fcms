@@ -1,6 +1,6 @@
 @extends('admin.master')
 @section('dashboard')
-<div class="content-wrapper"style="background-image:url('{{url('backend/img/think.jpg')}}');height:300px;">
+<div class="content-wrapper"style="background-image:url('{{url('backend/img/think.jpg')}}');height:500px;">
     <!-- Content Header (Page header) -->
     <div class="content-header">
       <div class="container-fluid">
@@ -18,6 +18,11 @@
 
     <!-- Main content -->
     <section class="content">
+    @if(session()->has('message'))
+        <p class="alert alert-success">
+            {{session()->get('message')}}
+        </p>
+    @endif
       <div class="container-fluid">
         <!-- Small boxes (Stat box) -->
         <div class="row">

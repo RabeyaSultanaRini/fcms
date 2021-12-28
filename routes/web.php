@@ -8,6 +8,9 @@ use App\Http\Controllers\Backend\MemberController;
 use App\Http\Controllers\Backend\AttendanceController;
 use App\Http\Controllers\Backend\DietController;
 use App\Http\Controllers\Backend\EquipmentController;
+use App\Http\Controllers\Frontend\UserController;
+use App\Http\Controllers\Backend\UserController as AdminUserController;
+use App\Http\Controllers\Backend\PaymentController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,11 +25,25 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('/',function(){
     return view('website.master');
-});
+
+})->name('website');
+// Route::get('/',[HomeController::class,'home'])->name('website');
+Route::post('/registration',[UserController::class,'registration'])->name('user.registration');
+Route::post('/login',[UserController::class,'login'])->name('user.login');
+Route::get('/logout',[UserController::class,'logout'])->name('user.logout');
+
+
+
+
+
+
 Route::group(['prefix'=>'admin'],function (){
-//Route::get('/login',[ AdminLoginController::class,'Login'])->name('login');
+    Route::get('/login',[AdminUserController::class,'login'])->name('admin.login');
+    Route::post('/login',[AdminUserController::class,'doLogin'])->name('admin.doLogin');
+Route::group(['middleware'=>'auth'],function (){
 
 Route::get('/',[DashboardController::class,'index'])->name('dashboard');
+Route::get('/logout',[AdminUserController::class,'logout'])->name('admin.logout');
 
 //Trainer
 Route::get('/addtrainer',[TrainerController::class,'Addtrainer'])->name('admin.addtrainer');
@@ -63,5 +80,9 @@ Route::get('/PackageList',[PackageController::class,'PackageList'])->name('admin
  Route::post('/EquipmentStore',[EquipmentController::class,'EquipmentStore'])->name('admin.Equipment.Store');
  Route::get('/EquipmentList',[EquipmentController::class,'EquipmentList'])->name('admin.Equipment.List');
 
- //payment
+ //payment 
+ Route::get('/addpayment',[PaymentController::class,'AddPayment'])->name('admin.addpayment');
+ Route::post('/PaymentStore',[PaymentController::class,'PaymentStore'])->name('admin.Payment.Store');
+ Route::get('/PaymentList',[PaymentController::class,'PaymentList'])->name('admin.Payment.List');
+});
 });

@@ -167,13 +167,13 @@
               </li>
           
           <li class="nav-item">
-                <a href="pages/forms/validation.html" class="nav-link">
+                <a href="{{route('admin.addpayment')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Payment</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/forms/validation.html" class="nav-link">
+                <a href="{{route('admin.Payment.List')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Payment List</p>
                 </a>
@@ -264,6 +264,7 @@
               </li>
             </ul>
           </li>
+
           <li class="nav-item">
             
             <ul class="nav nav-treeview">
@@ -285,10 +286,11 @@
                   <p>jsGrid</p>
                 </a>
               </li>
+             
             </ul>
           </li>
-       
-  
+         
+          
           
           
           
@@ -298,6 +300,7 @@
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
+      <button><a class="nav-link px-3"style="color:black;background-color:darkgrey;" href="{{route('admin.logout')}}">Sign out</a></button>
     </div>
     </div>
     
