@@ -32,13 +32,7 @@
       </div>
     </div>
   </div>
-  <div class="form-row">
-    <div class="col-md-6 mb-3">
-      <label for="validationCustom03">Package Details</label>
-      <input name="package_details" class="form-control" id="validationCustom03" placeholder="Contact Number" required>
-      <div class="invalid-feedback">
-        Please provide a valid city.
-      </div>
+  
    
     
    

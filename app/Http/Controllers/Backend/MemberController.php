@@ -27,6 +27,7 @@ class MemberController extends Controller
         return redirect()->back();
     }
     public function Memberlist(){
+        
         $members=Member::all();
         return view('admin.partial.Member.memberlist',compact('members'));
     }

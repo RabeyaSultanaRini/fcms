@@ -20,7 +20,15 @@ class ShiftController extends Controller
         return redirect()->back();
     }
     public function ShiftList(){
+        $key=null;
+        if(request()->search);{
+            $key=request()->search;
+            $shifts=Shift::where('trainer_name','Like','%'.$key.'%')
+            ->get();
+            return view('admin.partial.Shift.shiftlist',compact('shifts','key'));
+
+        }
         $shifts=Shift::all();
-        return view('admin.partial.shift.ShiftList',compact('shifts'));
+        return view('admin.Shift.list',compact('shifts','key'));
     }
 }

@@ -1,6 +1,6 @@
 @extends('admin.master')
 @section('dashboard')
-<div class="content-wrapper"style="background-image:url('{{url('backend/img/think.jpg')}}');height:500px;">
+<div class="content-wrapper"style="background-image:url('{{url('backend/img/fruits.jpg')}}');height:100px;">
     <!-- Content Header (Page header) -->
     <div class="content-header">
       <div class="container-fluid">

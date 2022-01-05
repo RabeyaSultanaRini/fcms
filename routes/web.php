@@ -40,7 +40,7 @@ Route::get('/logout',[UserController::class,'logout'])->name('user.logout');
 Route::group(['prefix'=>'admin'],function (){
     Route::get('/login',[AdminUserController::class,'login'])->name('admin.login');
     Route::post('/login',[AdminUserController::class,'doLogin'])->name('admin.doLogin');
-Route::group(['middleware'=>'auth'],function (){
+Route::group(['middleware'=>['auth','admin']],function (){
 
 Route::get('/',[DashboardController::class,'index'])->name('dashboard');
 Route::get('/logout',[AdminUserController::class,'logout'])->name('admin.logout');
@@ -49,10 +49,12 @@ Route::get('/logout',[AdminUserController::class,'logout'])->name('admin.logout'
 Route::get('/addtrainer',[TrainerController::class,'Addtrainer'])->name('admin.addtrainer');
 Route::post('/trainerStore',[TrainerController::class,'TrainerStore'])->name('admin.train.store');
 Route::get('/trainerlist',[TrainerController::class,'Trainerlist'])->name('admin.trainer.list');
+Route::get('trainer/edit/{trainer_id}',[TrainerController::class,'trainerEdit'])->name('admin.trainer.edit');
+Route::put('trainer/update/{trainer_id}',[TrainerController::class,'trainerUpdate'])->name('admin.trainer.update');
+Route::get('trainer/delete/{trainer_id}',[TrainerController::class,'trainerDelete'])->name('admin.trainer.delete');
 
 
-
-//Member
+//Member  
 Route::get('/addmember',[MemberController::class,'Addmember'])->name('admin.addmember');
 Route::post('/memberStore',[MemberController::class,'MemberStore'])->name('admin.member.store');
 Route::get('/memberlist',[MemberController::class,'Memberlist'])->name('admin.member.list');

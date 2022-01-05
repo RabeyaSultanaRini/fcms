@@ -2,7 +2,7 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
-
+<div class="content-wrapper"style="background-image:url('{{url('backend/img/gym.jpg')}}');height: 900px;">
 
 <style type="text/css">
     body {
@@ -27,7 +27,7 @@
 </style>
 <body>
 <div id="login">
-    <h3 class="text-center text-white pt-5">Login form</h3>
+    
     <div class="container">
         @if ($errors->any())
             <div class="alert alert-danger">
@@ -65,9 +65,7 @@
 
                             <button type="submit" class="btn btn-info btn-md">Login</button>
                         </div>
-                        <div id="register-link" class="text-right">
-                            <a href="#" class="text-info">Register here</a>
-                        </div>
+                        
                     </form>
                 </div>
             </div>
