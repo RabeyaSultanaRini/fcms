@@ -7,10 +7,10 @@
   <thead>
     <tr>
     <th scope="col">SL</th>
-      <th scope="col">Package Name</th>
+      <th scope="col">Package Name</th> 
       <th scope="col">Package Info</th>
       <th scope="col">Package Duration</th>
-      <th scope="col">Package Details</th>
+      
       
     </tr>
   </thead>
@@ -18,10 +18,10 @@
        @foreach($Packages as $key=> $Package)
     <tr>
       <th >{{$key+1}}</th>
-      <td>{{$Package->package_name}}</td>
+      <td>{{$Package->package_name}}</td> 
       <td>{{$Package->package_info}}</td>
       <td>{{$Package->package_duration}}</td>
-      <td>{{$Package->package_details}}</td>
+     
     
       
       

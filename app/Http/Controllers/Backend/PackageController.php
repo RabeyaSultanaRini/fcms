@@ -13,10 +13,10 @@ class PackageController extends Controller
     }
     public function PackageStore(Request $request){
         Package::create([
-            'package_name'=>$request->package_name,
+         'package_name'=>$request->package_name,
             'package_info'=>$request->package_info,
             'package_duration'=>$request->package_duration,
-            'package_details'=>$request->package_details,
+           
            
 
         ] );

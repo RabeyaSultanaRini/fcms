@@ -32,12 +32,15 @@
                               <li class="nav-item">
                                  <a class="nav-link" href="index.html">Contact Us</a>
                               </li>
+                             
                               
                     @if(auth()->user())
                     <!-- Button trigger modal -->
 
                         <a href="{{route('user.logout')}}" class="nav-link">{{auth()->user()->name}} | Logout</a>
-
+                        <li class="nav-item">
+                           <a class="nav-link" href="{{route('user.profile')}}">Profile</a>
+                        </li> 
                         @else
                         <li class="nav-item">
                                  <a class="nav-link"data-toggle="modal"  href="#login">Login </a>
@@ -45,6 +48,7 @@
                               <li class="nav-item">
                                  <a class="nav-link" data-toggle="modal" href="#registration">Register</a>
                               </li>
+                               
 
                             
    
@@ -97,31 +101,38 @@
             </div>
             <div class="row">
                <div class="col-md-4">
-               <a href="{{route('user.trainerlist')}}">
+               
                   <div class="Our_box">
                      <i><img src="{{url('frontend/icon/icon1.png')}}" alt="#"/></i>
-                     <h4>Trainer List </h4>
+                     <a href="{{route('user.trainerlist')}}">
+                     <h4>Trainer List </h4></a>
                   </div>
-               </a>
+            
                </div>
                <div class="col-md-4">
+                <a href="{{route('user.packagelist')}}"> 
                   <div class="Our_box">
                      <i><img src="{{url('frontend/icon/icon2.png')}}" alt="#"/></i>
-                     <h4>Packages  </h4>
+                     <h4>Packages  </h4></a>
                   </div>
                </div>
-               <div class="col-md-4">
+               {{-- jhamela ache --}}
+               {{-- <div class="col-md-4">
+                  <a href="{{route('user.dietList')}}"> 
                   <div class="Our_box">
+               
                      <i><img src="{{url('frontend/icon/icon3.png')}}" alt="#"/></i>
                      <h4>Diet</h4>
                   </div>
-               </div>
-               <div class="col-md-12">
+                  </div>
+                  
+                   --}}
+               
                 
                </div>
             </div>
-         </div>
-      </div>
+            </div>
+         
       <!-- end Features -->
       <!-- discount -->
       <div class="discount">

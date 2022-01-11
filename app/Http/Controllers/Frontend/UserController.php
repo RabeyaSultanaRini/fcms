@@ -48,5 +48,15 @@ class UserController extends Controller
         Auth::logout();
      return redirect()->route('website')->with('message','Logging out.');
     }
+    public function profile()
+    {
+   $User=User::all();
+   if($User){
+   return view('website.partial.profile',compact('User'));
+    }
+    else{
+        return redirect()->route('website');
+    }
 
+}
 }

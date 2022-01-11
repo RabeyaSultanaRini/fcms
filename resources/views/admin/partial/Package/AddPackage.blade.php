@@ -6,42 +6,25 @@
 
 <form action="{{route('admin.Package.Store')}}" method="POST">
 @csrf
-<form class="needs-validation" novalidate>
-  <div class="form-row">
-    <div class="col-md-4 mb-3">
-      <label for="validationCustom01">Package Name</label>
-      <input name="package_name" class="form-control" id="validationCustom01" placeholder="Member Name"  required>
-      <div class="valid-feedback">
-        Looks good!
-      </div>
+<form>
+<div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Package Name</label>
+        <input name="package_name" placeholder="Enter Package Name " type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
     </div>
-    <div class="col-md-4 mb-3">
-      <label for="validationCustom02">Package Info</label>
-      <input name="package_info" class="form-control" id="validationCustom02" placeholder="Email"  required>
-      <div class="valid-feedback">
-        Looks good!
-      </div>
+
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Package Info</label>
+        <input name="package_info" placeholder="Enter Package Info"  type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
     </div>
-    <div class="col-md-4 mb-3">
-      <label for="validationCustom02">Package Duration</label>
-      <input name="package_duration" class="form-control" id="validationCustom02" placeholder="Email"  required>
-      <div class="valid-feedback">
-        Looks good!
-      </div>
-        </div>
-      </div>
+
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Package Duration</label>
+        <input name="package_duration" placeholder="Enter Package Duration"  type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
     </div>
-  </div>
-  
-   
+
     
-   
-      </label>
-      <div class="invalid-feedback">
-        You must agree before submitting.
-      </div>
-    </div>
-  </div>
-  <button class="btn btn-primary" type="submit">Submit form</button>
+
+    <button type="submit" class="btn btn-success">Submit</button>
 </form>
 @endsection

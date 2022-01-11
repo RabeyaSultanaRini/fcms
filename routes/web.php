@@ -6,11 +6,13 @@ use  App\Http\Controllers\Backend\ShiftController;
 use App\Http\Controllers\Backend\PackageController;
 use App\Http\Controllers\Backend\MemberController;
 use App\Http\Controllers\Backend\AttendanceController;
-use App\Http\Controllers\Backend\DietController;
+use App\Http\Controllers\Backend\DietController; 
 use App\Http\Controllers\Backend\EquipmentController;
 use App\Http\Controllers\Frontend\UserController;
 use App\Http\Controllers\Frontend\HomeController;
+use App\Http\Controllers\Frontend\DietController as UserDietController;
 use App\Http\Controllers\Frontend\TrainerController as UserTrainerController;
+use App\Http\Controllers\Frontend\PackageController as UserPackageController;
 use App\Http\Controllers\Backend\UserController as AdminUserController;
 use App\Http\Controllers\Backend\PaymentController;
 use Illuminate\Support\Facades\Route;
@@ -25,12 +27,15 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+//website:
 Route::get('/',[HomeController::class,'home'])->name('website');
 Route::post('/registration',[UserController::class,'registration'])->name('user.registration');
 Route::post('/login',[UserController::class,'login'])->name('user.login');
 Route::get('/logout',[UserController::class,'logout'])->name('user.logout');
 Route::get('trainerlist/',[UserTrainerController::class,'TrainerList'])->name('user.trainerlist');
+Route::get('PackageList/',[UserPackageController::class,'PackageList'])->name('user.packagelist');
+Route::get('DietList/',[UserDietController::class,'dietList'])->name('user.dietList');
+Route::get('/profile',[UserController::class,'profile'])->name('user.profile');
 
 
 
