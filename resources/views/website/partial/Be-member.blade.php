@@ -14,9 +14,9 @@
       <label for="inputEmail4">member Name</label>
       <select name=member_Name class="form-control">
         @foreach($user as $user)
-        @if(auth()->user()->id==$user->id?auth()->user()->role=='user':0)
+
         <option value="{{$user->id}}">{{$user->name}}</option>
-          @endif 
+          
           @endforeach
         </select>
     </div>
@@ -38,10 +38,7 @@
       <label for="inputCity">Time Slot</label>
       <input name="Time_Slot" class="form-control" id="inputCity"placeholder="Time Slot">
     </div>
-    <div class="form-group col-md-4">
-      <label for="inputState">Membership Number</label>
-      <input name="Membership_Number" class="form-control" id="inputCity"placeholder="Membership Number">
-    </div>
+    
     <div class="form-group col-md-2">
       <label for="inputZip">Age</label>
       <input name="Age" class="form-control" id="inputZip"placeholder="Age">

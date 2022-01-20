@@ -25,7 +25,7 @@ class websiteMemberController extends Controller
 'Address'=>$request->Address,
 'Contact_Number'=>$request->Contact_Number,
 'package_id'=>$request->package_name,
-'Membership_Number'=>$request->Membership_Number,
+
 'Age'=>$request->Age,
 
         ]);

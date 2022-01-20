@@ -9,6 +9,6 @@ class PackageController extends Controller
 {
     public function PackageList(){
         $Packages=Package::all();
-        return view('website.partial.PackageList',compact('Packages'));
+        return view('website.partial.packageList',compact('Packages'));
     }
 }

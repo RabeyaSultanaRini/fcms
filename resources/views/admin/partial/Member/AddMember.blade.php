@@ -27,7 +27,7 @@
       <label for="validationCustomUsername">Address</label>
       <div class="input-group">
         <div class="input-group-prepend">
-          <span class="input-group-text" id="inputGroupPrepend">@</span>
+          
         </div>
         <input name="Address" class="form-control" id="validationCustomUsername" placeholder="Address" aria-describedby="inputGroupPrepend" required>
         <div class="invalid-feedback">
