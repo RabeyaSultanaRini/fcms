@@ -1,24 +1,26 @@
 <?php
 
-namespace App\Http\Controllers\Backend;
-
+namespace App\Http\Controllers\frontend;
+use App\Models\Package;
+use App\Models\Member;
+use App\Models\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\Package;
-use App\Models\User;
-use App\Models\Member;
-class MemberController extends Controller
 
+class websiteMemberController extends Controller
 {
     public function Addmember(){
+       
+        $user=User::all();
+        
         $packages=Package::all();
-        return view('admin.partial.Member.AddMember',compact('packages'));
-
+        return view('website.partial.Be-member',compact('packages','user'));
     }
     public function MemberStore(Request $request){
         Member::create([
+            
 //database name:::form name
-'name'=>$request->member_Name,
+'user_id'=>$request->member_Name,
 'Email'=>$request->Email,
 'Address'=>$request->Address,
 'Contact_Number'=>$request->Contact_Number,
@@ -29,9 +31,8 @@ class MemberController extends Controller
         ]);
         return redirect()->back();
     }
-    public function Memberlist(){
-        
-        $members=Member::with('packages','trainers')->get();
-        return view('admin.partial.Member.memberlist',compact('members'));
+
+    public function member(){
+        return view('website.partial.website-member');
     }
 }

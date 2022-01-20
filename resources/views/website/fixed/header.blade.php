@@ -116,18 +116,14 @@
                      <h4>Packages  </h4></a>
                   </div>
                </div>
-               {{-- jhamela ache --}}
-               {{-- <div class="col-md-4">
-                  <a href="{{route('user.dietList')}}"> 
-                  <div class="Our_box">
                
-                     <i><img src="{{url('frontend/icon/icon3.png')}}" alt="#"/></i>
-                     <h4>Diet</h4>
-                  </div>
-                  </div>
-                  
-                   --}}
-               
+               <div class="col-md-4">
+                  <a href="{{route('admin.member')}}"> 
+                    <div class="Our_box">
+                       <i><img src="{{url('frontend/icon/icon2.png')}}" alt="#"/></i>
+                       <h4>member  </h4></a>
+                    </div>
+                 </div>
                 
                </div>
             </div>
@@ -222,6 +218,7 @@
                     <label for="">Enter User Mobile:</label>
                     <input name="user_mobile" type="text" class="form-control" placeholder="Enter user mobile">
                 </div>
+                
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

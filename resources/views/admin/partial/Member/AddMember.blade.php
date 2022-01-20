@@ -58,6 +58,14 @@
         Please provide a valid zip.
       </div>
     </div>
+    <div class="form-group">
+      <label for="validationCustom05">Enter packages:</label>
+      <select name=package_name>
+         @foreach($packages as $package)
+         <option value="{{$package->id}}">{{$package->package_name}}>
+            @endforeach
+         </select>
+  </div>
   </div>
   <div class="form-group">
     <div class="form-check">

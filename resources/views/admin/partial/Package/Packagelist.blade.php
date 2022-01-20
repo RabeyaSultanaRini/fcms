@@ -10,6 +10,7 @@
       <th scope="col">Package Name</th> 
       <th scope="col">Package Info</th>
       <th scope="col">Package Duration</th>
+      <th scope="col">Package details</th>
       
       
     </tr>
@@ -21,8 +22,10 @@
       <td>{{$Package->package_name}}</td> 
       <td>{{$Package->package_info}}</td>
       <td>{{$Package->package_duration}}</td>
+      <td>{{$Package->package_details}}</td>
      
-    
+      <a class="btn btn-info" href="{{route('admin.package.edit',$Package->id)}}">Edit</a>
+      <a class="btn btn-danger" href="{{route('admin.package.delete',$Package->id)}}">Delete</a>
       
       
     </tr>

@@ -9,4 +9,6 @@ class Addtrainer extends Model
 {
     use HasFactory;
     protected $guarded=[];
+
+
 }

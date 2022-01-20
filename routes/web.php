@@ -3,6 +3,7 @@ use App\Http\Controllers\AdminLoginController;
 use  App\Http\Controllers\Backend\DashboardController;
 use  App\Http\Controllers\Backend\TrainerController;
 use  App\Http\Controllers\Backend\ShiftController;
+use  App\Http\Controllers\Frontend\websiteMemberController;
 use App\Http\Controllers\Backend\PackageController;
 use App\Http\Controllers\Backend\MemberController;
 use App\Http\Controllers\Backend\AttendanceController;
@@ -37,6 +38,9 @@ Route::get('PackageList/',[UserPackageController::class,'PackageList'])->name('u
 Route::get('DietList/',[UserDietController::class,'dietList'])->name('user.dietList');
 Route::get('/profile',[UserController::class,'profile'])->name('user.profile');
 
+Route::get('/member/view',[websiteMemberController::class,'member'])->name('admin.member');
+Route::get('/add/member',[websiteMemberController::class,'Addmember'])->name('admin.addmember.website');
+Route::post('/member/Store',[websiteMemberController::class,'MemberStore'])->name('admin.member.store.website');
 
 
 
@@ -72,6 +76,9 @@ Route::get('/ShiftList',[ShiftController::class,'ShiftList'])->name('admin.Shift
 Route::get('/addpackage',[PackageController::class,'PackageAdd'])->name('admin.addpackage');
 Route::post('/PackageStore',[PackageController::class,'PackageStore'])->name('admin.Package.Store');
 Route::get('/PackageList',[PackageController::class,'PackageList'])->name('admin.Package.List');
+Route::get('Package/edit/{package_id}',[PackageController::class,'packageEdit'])->name('admin.package.edit');
+Route::put('Package/update/{package_id}',[PackageController::class,'packageUpdate'])->name('admin.package.update');
+Route::get('Package/delete/{package_id}',[PackageController::class,'packageDelete'])->name('admin.package.delete');
 
 //Attendance
  Route::get('/addattendance',[AttendanceController::class,'AttendanceAdd'])->name('admin.addattendance');
@@ -91,5 +98,7 @@ Route::get('/PackageList',[PackageController::class,'PackageList'])->name('admin
  Route::get('/addpayment',[PaymentController::class,'AddPayment'])->name('admin.addpayment');
  Route::post('/PaymentStore',[PaymentController::class,'PaymentStore'])->name('admin.Payment.Store');
  Route::get('/PaymentList',[PaymentController::class,'PaymentList'])->name('admin.Payment.List');
+
+ 
 });
 });

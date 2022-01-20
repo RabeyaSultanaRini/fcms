@@ -16,7 +16,7 @@
 
     <h5 class="card-title">{{$Package->package_duration}}</h5>
    
-    
+    <h5 class="card-title">{{$Package->package_details}}</h5>
     <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
   </div>
 </div>
