@@ -12,7 +12,7 @@
       <th scope="col">Email</th>
       <th scope="col">Address</th>
       <th scope="col">Contact Number</th>
-      <th scope="col">Membership Number</th>
+      
       <th scope="col">packages</th>
       <th scope="col">Age</th>
     </tr>
@@ -26,7 +26,7 @@
       <td>{{$member->Email}}</td>
       <td>{{$member->Address}}</td>
       <td>{{$member->Contact_Number}} </td>
-      <td>{{$member->Membership_Number}}</td>
+     
       <td>{{$member->packages->package_name}}</td>
       <td>{{$member->Age}}</td>
     </tr>

@@ -19,7 +19,7 @@ class CreateMemberTable extends Migration
             $table->String('Email');
             $table->String('Address');
             $table->double('Contact_Number');
-            $table->double('Membership_Number');
+          
             $table->String('package_id');
             $table->double('Age');
             $table->timestamps();
