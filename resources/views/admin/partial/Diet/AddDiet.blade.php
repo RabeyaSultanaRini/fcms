@@ -29,16 +29,11 @@
       <input name="Age" class="form-control" id="inputZip"placeholder="Age">
     </div>
   </div>
-  <div class="form-group">
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" id="gridCheck">
-      <label class="form-check-label" for="gridCheck">
-        Check me out
-      </label>
-    </div>
+ 
   </div>
-  <button type="submit" class="btn btn-primary">Sign in</button>
+  <button type="submit" class="btn btn-primary">Add Diet</button>
 </form>
 </div>
 
 @endsection
+ 
