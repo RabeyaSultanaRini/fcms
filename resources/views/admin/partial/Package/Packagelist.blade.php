@@ -23,10 +23,10 @@
       <td>{{$Package->package_info}}</td>
       <td>{{$Package->package_duration}}</td>
       <td>{{$Package->package_details}}</td>
-     
+     <td>
       <a class="btn btn-info" href="{{route('admin.package.edit',$Package->id)}}">Edit</a>
       <a class="btn btn-danger" href="{{route('admin.package.delete',$Package->id)}}">Delete</a>
-      
+    </td>
       
     </tr>
     @endforeach
