@@ -1,43 +1,38 @@
 @extends('admin.master')
 @section('main')
 <div class="container" >
-<h3 class="font-weight-bold">Payment Form</h3>
+<h3 class="font-weight-bold">Payment </h3>
 <div class="form-colume">
 
-<form action="{{route('admin.Payment.Store')}}" method="POST">
+<form action="{{route('admin.Payment.Store',$member->id)}}" method="POST">
 @csrf
   <div class="form-row">
     <div class="form-group col-md-6">
-      <label for="inputMember Name4">Member Name</label>
-      <input name="member_name" class="form-control" id="inputEmail4" placeholder="ember Name">
+      <label for="inputMember Name4">Month</label>
+      <input name="month_name" class="form-control" id="inputEmail4" placeholder="member Name">
     </div>
     <div class="form-group col-md-6">
-      <label for="inputPassword4">Membership Number</label>
-      <input name="membership_number" class="form-control" id="inputPassword4" placeholder="Membership Number">
+      <label for="inputPassword4">Year</label>
+      <input name="year" class="form-control" id="inputPassword4" placeholder="Membership Number">
     </div>
   </div>
   <div class="form-group">
-    <label for="inputAddress">Month Name</label>
-    <input name="month_name" class="form-control" id="inputAddress" placeholder="Month Name">
+    <label for="inputAddress">Amount</label>
+    <input name="amount" class="form-control" id="inputAddress" placeholder="Month Name">
   </div>
   <div class="form-group">
-    <label for="inputAddress2">Payment Status</label>
-    <input name="payment_status" class="form-control" id="inputAddress2" placeholder="Payment Status">
+    <label for="inputAddress2">Payment Method</label>
+    <input name="payment_method" class="form-control" id="inputAddress2" placeholder="Payment Status">
   </div>
   <div class="form-row">
     <div class="form-group col-md-6">
-      <label for="inputCity">Date</label>
-      <input name="date" class="form-control" id="Date<">
+      <label for="inputCity">Transation Id</label>
+      <input name="transation_id" class="form-control" id="Date<">
     </div>
     </div>
     <div class="form-group">
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" id="gridCheck">
-      <label class="form-check-label" for="gridCheck">
-        Check me out
-      </label>
-    </div>
+   
   </div>
-  <button type="submit" class="btn btn-primary">Sign in</button>
+  <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 @endsection

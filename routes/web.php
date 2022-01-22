@@ -95,9 +95,13 @@ Route::get('Package/delete/{package_id}',[PackageController::class,'packageDelet
  Route::get('/EquipmentList',[EquipmentController::class,'EquipmentList'])->name('admin.Equipment.List');
 
  //payment 
- Route::get('/addpayment',[PaymentController::class,'AddPayment'])->name('admin.addpayment');
- Route::post('/PaymentStore',[PaymentController::class,'PaymentStore'])->name('admin.Payment.Store');
+ Route::get('/addpayment/{id}',[PaymentController::class,'AddPayment'])->name('admin.addpayment');
+ Route::post('/PaymentStore/{member_id}',[PaymentController::class,'PaymentStore'])->name('admin.Payment.Store');
  Route::get('/PaymentList',[PaymentController::class,'PaymentList'])->name('admin.Payment.List');
+ Route::get('/Viewpayment/{member_id}',[PaymentController::class,'Viewpayment'])->name('admin.Payment.Viewpayment');
+ 
+ 
+ 
 
  
 });

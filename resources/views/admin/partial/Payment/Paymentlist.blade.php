@@ -7,11 +7,11 @@
   <thead>
     <tr>
     <th scope="col">SL</th>
-      <th scope="col">Member Name</th>
-      <th scope="col">Membership Number</th>
-      <th scope="col">Month Name</th>
-      <th scope="col">Payment Status</th>
-      <th scope="col">Date</th>
+      <th scope="col">Month</th>
+      <th scope="col">Year</th>
+      <th scope="col">Amount</th>
+      <th scope="col">Payment Method<</th>
+      <th scope="col">Transation Id</th>
       
     </tr>
   </thead>
@@ -19,11 +19,11 @@
        @foreach($Payments as $key=> $Payment)
     <tr>
       <th >{{$key+1}}</th>
-      <td>{{$Payment->member_name}}</td>
-      <td>{{$Payment->membership_number}}</td>
       <td>{{$Payment->month_name}}</td>
-      <td>{{$Payment->payment_status}}</td>
-      <td>{{$Payment->date}}</td>
+      <td>{{$Payment->year}}</td>
+      <td>{{$Payment->amount}}</td>
+      <td>{{$Payment->payment_method}}</td>
+      <td>{{$Payment->transation_id}}</td>
     
       
       

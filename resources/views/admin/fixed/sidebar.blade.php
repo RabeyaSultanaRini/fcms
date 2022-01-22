@@ -167,10 +167,10 @@
               </li>
           
           <li class="nav-item">
-                <a href="{{route('admin.addpayment')}}" class="nav-link">
+                {{-- <a href="{{route('admin.addpayment')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Payment</p>
-                </a>
+                </a> --}}
               </li>
               <li class="nav-item">
                 <a href="{{route('admin.Payment.List')}}" class="nav-link">

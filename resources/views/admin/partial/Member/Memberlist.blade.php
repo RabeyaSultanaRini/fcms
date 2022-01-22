@@ -14,6 +14,7 @@
       <th scope="col">Contact Number</th>
       <th scope="col">packages</th>
       <th scope="col">Age</th>
+      <th scope="col">Action</th>
     </tr>
   </thead>
   <tbody>
@@ -26,11 +27,13 @@
       <td>{{$member->Contact_Number}} </td>
       <td>{{$member->packages->package_name}}</td>
       <td>{{$member->Age}}</td>
+      <td>
+       <a href="{{route('admin.addpayment',$member->id)}}" class="btn btn-info">Add Payment</a>
+       <a href="{{route('admin.Payment.Viewpayment',$member->id)}}" class="btn btn-info">View Payment</a>
+      </td>
     </tr>
     {{-- button pase nibo  --}}
       
-       <a class="btn btn-info">Add Payment</a>
-       <a class="btn btn-info">View Payment</a>
       
     @endforeach
   </tbody> 
