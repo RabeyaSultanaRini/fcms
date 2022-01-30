@@ -8,7 +8,13 @@ use Illuminate\Http\Request;
 class TrainerController extends Controller
 {
     public function TrainerList(){
-        $trainers=Addtrainer::all();
-        return view('website.partial.trainerlist',compact('trainers'));
+        if (auth()->user()) {
+            $trainers=Addtrainer::all();
+            return view('website.partial.trainerlist',compact('trainers'));
+        } else {
+            return redirect()->back()->with('error','You need to register first');
+        }
+        
+        
     }
 }

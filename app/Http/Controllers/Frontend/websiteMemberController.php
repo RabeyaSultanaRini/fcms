@@ -33,6 +33,11 @@ class websiteMemberController extends Controller
     }
 
     public function member(){
+        if (auth()->user()) {
         return view('website.partial.website-member');
     }
+    else{
+        return redirect()->back()->with('error','You need to register first');
+    }
+}
 }

@@ -47,14 +47,14 @@
   <div class="card" style="width: 18rem; border-radius: 9%;">
   <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
   <div class="card-body" >
-    <h5 class="card-title">{{$trainer->name}}</h5>
-    <h5 class="card-title">{{$trainer->Email}}</h5>
+    <h5 class="card-title">Name:   {{$trainer->name}}</h5>
+    <h5 class="card-title">Email:  {{$trainer->Email}}</h5>
 
-    <h5 class="card-title">{{$trainer->Address}}</h5>
-    <h5 class="card-title">{{$trainer->Contact_Number}}</h5>
-    <h5 class="card-title">{{$trainer->Time_Slot}}</h5>
-    <h5 class="card-title">{{$trainer->Membership_Number}}</h5>
-    <h5 class="card-title">{{$trainer->Age}}</h5>
+    <h5 class="card-title">Address: {{$trainer->Address}}</h5>
+    <h5 class="card-title">Contact No: {{$trainer->Contact_Number}}</h5>
+    <h5 class="card-title">Time Slot: {{$trainer->Time_Slot}}</h5>
+    <h5 class="card-title">Membership No: {{$trainer->Membership_Number}}</h5>
+    <h5 class="card-title">Age: {{$trainer->Age}}</h5>
     <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
   </div>
 </div>

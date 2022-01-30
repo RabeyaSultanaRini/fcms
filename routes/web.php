@@ -37,7 +37,6 @@ Route::get('trainerlist/',[UserTrainerController::class,'TrainerList'])->name('u
 Route::get('PackageList/',[UserPackageController::class,'PackageList'])->name('user.packagelist');
 Route::get('DietList/',[UserDietController::class,'dietList'])->name('user.dietList');
 Route::get('/profile',[UserController::class,'profile'])->name('user.profile');
-
 Route::get('/member/view',[websiteMemberController::class,'member'])->name('admin.member');
 Route::get('/add/member',[websiteMemberController::class,'Addmember'])->name('admin.addmember.website');
 Route::post('/member/Store',[websiteMemberController::class,'MemberStore'])->name('admin.member.store.website');

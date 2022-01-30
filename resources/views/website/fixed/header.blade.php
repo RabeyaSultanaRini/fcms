@@ -188,6 +188,8 @@
       </div>
       <!-- end request -->
       <!-- people -->
+
+     
       
 <!-- Registration Modal -->
 <div class="modal fade" id="registration" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

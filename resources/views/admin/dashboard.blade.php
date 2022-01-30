@@ -1,6 +1,6 @@
 @extends('admin.master')
 @section('dashboard')
-<div class="content-wrapper"style="background-image:url('{{url('backend/img/fruits.jpg')}}');height:100px;">
+<div class="content-wrapper"style="background-image:url('{{url('backend/img/lebu.jpg')}}');height:100px;">
     <!-- Content Header (Page header) -->
     <div class="content-header">
       <div class="container-fluid">
@@ -36,9 +36,9 @@
             <!-- small box -->
             <div class="small-box bg-success">
               <div class="inner">
-                <h3>100<sup style="font-size: 20px">+</sup></h3>
+                <h3>{{$equipment}}<sup style="font-size: 20px">+</sup></h3>
 
-                <p>Gym Accessories</p>
+                <p>Gym Equipments</p>
               </div>
               <div class="icon">
                
@@ -51,7 +51,7 @@
             <!-- small box -->
             <div class="small-box bg-warning">
               <div class="inner">
-                <h3>200<sup style="font-size: 20px">+</sup></h3>
+                <h3>{{$member}}<sup style="font-size: 20px">+</sup></h3>
 
 
 
@@ -69,9 +69,9 @@
             <!-- small box -->
             <div class="small-box bg-danger">
               <div class="inner">
-                <h3>2<sup style="font-size: 20px">+</sup></h3>
+                <h3>{{$addtrainers}}<sup style="font-size: 20px">+</sup></h3>
 
-                <p>Gym Offers</p>
+                <p>Trainers</p>
               </div>
               <div class="icon">
                 <i class="ion ion-pie-graph"></i>

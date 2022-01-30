@@ -8,7 +8,13 @@ use Illuminate\Http\Request;
 class PackageController extends Controller
 {
     public function PackageList(){
+        if (auth()->user()) {
         $Packages=Package::all();
-        return view('website.partial.packageList',compact('Packages'));
+   return view('website.partial.packageList',compact('Packages'));
+
     }
+    else{
+        return redirect()->back()->with('error','You need to register first');
+    }
+}
 }
