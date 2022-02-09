@@ -241,9 +241,9 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/forms/editors.html" class="nav-link">
+                <a href="{{route('admin.member.list')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Editors</p>
+                  <p>Inquiries</p>
                 </a>
               </li>
               <li class="nav-item">

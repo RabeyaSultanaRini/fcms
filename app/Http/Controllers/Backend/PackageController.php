@@ -66,5 +66,6 @@ class PackageController extends Controller
         $package=Package::find($Package_id);
        return view('admin.partial.Package.packageedit',compact('package'));
     }
- 
+
+    
 }

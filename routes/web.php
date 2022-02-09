@@ -1,22 +1,23 @@
 <?php
-use App\Http\Controllers\AdminLoginController;
-use  App\Http\Controllers\Backend\DashboardController;
-use  App\Http\Controllers\Backend\TrainerController;
-use  App\Http\Controllers\Backend\ShiftController;
-use  App\Http\Controllers\Frontend\websiteMemberController;
-use App\Http\Controllers\Backend\PackageController;
-use App\Http\Controllers\Backend\MemberController;
-use App\Http\Controllers\Backend\AttendanceController;
-use App\Http\Controllers\Backend\DietController; 
-use App\Http\Controllers\Backend\EquipmentController;
-use App\Http\Controllers\Frontend\UserController;
-use App\Http\Controllers\Frontend\HomeController;
-use App\Http\Controllers\Frontend\DietController as UserDietController;
-use App\Http\Controllers\Frontend\TrainerController as UserTrainerController;
-use App\Http\Controllers\Frontend\PackageController as UserPackageController;
-use App\Http\Controllers\Backend\UserController as AdminUserController;
-use App\Http\Controllers\Backend\PaymentController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminLoginController;
+use App\Http\Controllers\Backend\DietController; 
+use App\Http\Controllers\Frontend\HomeController;
+use App\Http\Controllers\Frontend\UserController;
+use  App\Http\Controllers\Backend\ShiftController;
+use App\Http\Controllers\Backend\MemberController;
+use App\Http\Controllers\Backend\PackageController;
+use App\Http\Controllers\Backend\PaymentController;
+use  App\Http\Controllers\Backend\TrainerController;
+use App\Http\Controllers\backend\CallbackController;
+use App\Http\Controllers\Backend\EquipmentController;
+use  App\Http\Controllers\Backend\DashboardController;
+use App\Http\Controllers\Backend\AttendanceController;
+use  App\Http\Controllers\Frontend\websiteMemberController;
+use App\Http\Controllers\Backend\UserController as AdminUserController;
+use App\Http\Controllers\Frontend\DietController as UserDietController;
+use App\Http\Controllers\Frontend\PackageController as UserPackageController;
+use App\Http\Controllers\Frontend\TrainerController as UserTrainerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,6 +41,8 @@ Route::get('/profile',[UserController::class,'profile'])->name('user.profile');
 Route::get('/member/view',[websiteMemberController::class,'member'])->name('admin.member');
 Route::get('/add/member',[websiteMemberController::class,'Addmember'])->name('admin.addmember.website');
 Route::post('/member/Store',[websiteMemberController::class,'MemberStore'])->name('admin.member.store.website');
+Route::post('/callback/Store',[CallbackController::class,'callbackStore'])->name('admin.store.callback');
+
 
 
 
@@ -66,6 +69,8 @@ Route::get('trainer/delete/{trainer_id}',[TrainerController::class,'trainerDelet
 Route::get('/addmember',[MemberController::class,'Addmember'])->name('admin.addmember');
 Route::post('/memberStore',[MemberController::class,'MemberStore'])->name('admin.member.store');
 Route::get('/memberlist',[MemberController::class,'Memberlist'])->name('admin.member.list');
+//contact
+Route::get('/callback/list',[CallbackController::class,'callbackList'])->name('admin.member.list');
 //shift
 Route::get('/shift',[ShiftController::class,'ShiftAdd'])->name('admin.shift');
 Route::post('/shiftStore',[ShiftController::class,'ShiftStore'])->name('admin.shift.store');
