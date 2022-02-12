@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers\Backend;
 
-use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
-use App\Models\Package;
 use App\Models\User;
+use App\Models\Level;
 use App\Models\Member;
+use App\Models\Package;
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+
 class MemberController extends Controller
 
 {
@@ -33,5 +35,33 @@ class MemberController extends Controller
         
         $members=Member::with('packages','trainers')->get();
         return view('admin.partial.Member.memberlist',compact('members'));
+    }
+    public function Viewlevel(){
+        return view('admin.partial.Level.levelview');
+    }
+    public function Addlevel(Request $request){
+        Level::create([
+            'level_type'=>$request->type,
+            'w_from'=>$request->from,
+            'w_to'=>$request->to,
+            'e_type'=>$request->excercise_type,
+            'description'=>$request->description,
+
+        ]);
+        return redirect()->back();
+    }
+    public function level($id){
+        $member=Member::find($id);
+        $levels=Level::all();
+        return view('admin.partial.Level.levelselect',compact('member','levels'));
+    }
+
+    public function selectlevel(Request $request,$id){
+        $member=Member::find($id);
+        $member->update([
+            'level_id'=>$request->level
+        ]);
+       
+        return redirect()->route('admin.member.list');
     }
 }

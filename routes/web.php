@@ -69,8 +69,14 @@ Route::get('trainer/delete/{trainer_id}',[TrainerController::class,'trainerDelet
 Route::get('/addmember',[MemberController::class,'Addmember'])->name('admin.addmember');
 Route::post('/memberStore',[MemberController::class,'MemberStore'])->name('admin.member.store');
 Route::get('/memberlist',[MemberController::class,'Memberlist'])->name('admin.member.list');
+
+//level
+route::Post('/addlevel',[MemberController::class,'Addlevel'])->name('admin.add.level');
+route::get('/viewlevel',[MemberController::class,'Viewlevel'])->name('admin.view.level');
+route::get('/selectlevel/{id}',[MemberController::class,'level'])->name('admin.select.level');
+route::put('/memberlevel/add/{id}',[MemberController::class,'selectlevel'])->name('admin.member.add.level');
 //contact
-Route::get('/callback/list',[CallbackController::class,'callbackList'])->name('admin.member.list');
+Route::get('/callback/list',[CallbackController::class,'callbackList'])->name('admin.callback.list');
 //shift
 Route::get('/shift',[ShiftController::class,'ShiftAdd'])->name('admin.shift');
 Route::post('/shiftStore',[ShiftController::class,'ShiftStore'])->name('admin.shift.store');

@@ -241,15 +241,15 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{route('admin.member.list')}}" class="nav-link">
+                <a href="{{route('admin.callback.list')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Inquiries</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/forms/validation.html" class="nav-link">
+                <a href="{{route('admin.view.level')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Validation</p>
+                  <p>Level</p>
                 </a>
               </li>
             </ul>

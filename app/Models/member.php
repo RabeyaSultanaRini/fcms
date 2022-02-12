@@ -1,11 +1,12 @@
 <?php
 
 namespace App\Models;
-use App\Models\Package;
 use App\Models\User;
+use App\Models\Level;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\Package;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Member extends Model
 {
@@ -18,5 +19,8 @@ class Member extends Model
     }
     public function trainers(){
         return $this->belongsTo(User::class,'user_id','id');
+    }
+    public function level(){
+        return $this->belongsTo(Level::class,'level_id','id');
     }
 }

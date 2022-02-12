@@ -21,6 +21,7 @@ class websiteMemberController extends Controller
             
 //database name:::form name
 'user_id'=>$request->member_Name,
+
 'Email'=>$request->Email,
 'Address'=>$request->Address,
 'Contact_Number'=>$request->Contact_Number,
@@ -40,4 +41,6 @@ class websiteMemberController extends Controller
         return redirect()->back()->with('error','You need to register first');
     }
 }
+
+
 }

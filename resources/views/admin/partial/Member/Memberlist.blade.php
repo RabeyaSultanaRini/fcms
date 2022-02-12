@@ -14,6 +14,7 @@
       <th scope="col">Contact Number</th>
       <th scope="col">packages</th>
       <th scope="col">Age</th>
+      <th scope="col">level</th>
       <th scope="col"> Payment</th>
    
     </tr>
@@ -28,10 +29,13 @@
       <td>{{$member->Contact_Number}} </td>
       <td>{{$member->packages->package_name}}</td>
       <td>{{$member->Age}}</td>
+      <td>{{$member->level?$member->level->level_type:'pending'}}</td>
       <td>
 
        <a href="{{route('admin.addpayment',$member->id)}}" class="btn btn-info">Add Payment</a>
        <a href="{{route('admin.Payment.Viewpayment',$member->id)}}" class="btn btn-info">View Payment</a>
+       
+       <a href="{{route('admin.select.level',$member->id)}}" class="btn btn-info">level</a>
       </td>
       
     </tr>
