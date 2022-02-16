@@ -11,12 +11,12 @@
   <div class="card" style="width: 18rem; border-radius: 9%;">
   <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
   <div class="card-body" >
-    <h5 class="card-title">{{$Package->package_name}}</h5>
-    <h5 class="card-title">{{$Package->package_info}}</h5>
+    <h5 class="card-title">Package Name: {{$Package->package_name}}</h5>
+    <h5 class="card-title">Package Information: {{$Package->package_info}}</h5>
 
-    <h5 class="card-title">{{$Package->package_duration}}</h5>
+    <h5 class="card-title">Package Duration: {{$Package->package_duration}}</h5>
    
-    <h5 class="card-title">{{$Package->package_details}}</h5>
+    <h5 class="card-title">Package Details: {{$Package->package_details}}</h5>
  
   </div>
 </div>

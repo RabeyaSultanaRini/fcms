@@ -30,7 +30,7 @@
   <div class="form-row ">
     <div class="form-group col-md-4">
       <label for="inputCity">Time Slot</label>
-      <input name="Time_Slot" class="form-control" id="inputCity"placeholder="Time Slot">
+      <input name="Time_Slot" class="form-control" id="inputCity" placeholder="Time Slot">
     </div>
     <div class="form-group col-md-4">
       <label for="inputState">Membership Number</label>

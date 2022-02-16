@@ -140,7 +140,7 @@
                   <p>Package List</p>
                 </a>
               </li>
-              <li class="nav-item">
+              {{-- <li class="nav-item">
                 <a href="{{route('admin.adddiet')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Basic Diet</p>
@@ -152,7 +152,7 @@
                   <i class="far fa-circle nav-icon"></i>
                   <p>Diet List</p>
                 </a>
-              </li>
+              </li> --}}
               <li class="nav-item">
                 <a href="{{route('admin.addequipment')}}"  class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
@@ -172,12 +172,12 @@
                   <p>Payment</p>
                 </a> --}}
               </li>
-              <li class="nav-item">
+              {{-- <li class="nav-item">
                 <a href="{{route('admin.Payment.List')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Payment List</p>
                 </a>
-              </li>
+              </li> --}}
               </ul>
           <li class="nav-item">
             <a href="#" class="nav-link">
@@ -203,7 +203,7 @@
                   <p>Attendance List</p>
                 </a>
               </li>
-              <li class="nav-item">
+              {{-- <li class="nav-item">
                 <a href="{{route('admin.addequipment')}}"  class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Equipments</p>
@@ -214,7 +214,7 @@
                   <i class="far fa-circle nav-icon"></i>
                   <p>Equipment List</p>
                 </a>
-              </li>
+              </li> --}}
               
               
             </ul>
